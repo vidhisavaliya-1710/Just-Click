@@ -1,0 +1,214 @@
+
+/* prompt-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/prompt-v10-latin-regular.eot'); 
+  src: url('../fonts/prompt-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/prompt-v10-latin-regular.woff2') format('woff2'), 
+       url('../fonts/prompt-v10-latin-regular.woff') format('woff'),
+       url('../fonts/prompt-v10-latin-regular.ttf') format('truetype'),
+       url('../fonts/prompt-v10-latin-regular.svg#Prompt') format('svg');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v27-latin-regular.eot'); 
+  src: url('../fonts/eb-garamond-v27-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/eb-garamond-v27-latin-regular.woff2') format('woff2'),
+       url('../fonts/eb-garamond-v27-latin-regular.woff') format('woff'), 
+       url('../fonts/eb-garamond-v27-latin-regular.ttf') format('truetype'),
+       url('../fonts/eb-garamond-v27-latin-regular.svg#EBGaramond') format('svg');
+}
+  
+/* eb-garamond-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v27-latin-italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/eb-garamond-v27-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/eb-garamond-v27-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/eb-garamond-v27-latin-italic.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/eb-garamond-v27-latin-italic.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/eb-garamond-v27-latin-italic.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+:root{
+    --fontPrompt:'Prompt';
+    --fontEB:'EB Garamond';
+    --colorpink:#C78665;
+    --colordark:#666861;
+    --grey2: #ccced76c linear-gradient(180deg, #aaaaaa, #504c52);
+  --blue2: #3c91e6 linear-gradient(180deg, #539de7, #406890);
+  --violet: #001f3f linear-gradient(180deg, #26415c, #001f3f);
+  --pink: #d81b60 linear-gradient(180deg, #de5889, #a23a60);
+  --blue: #6b6c6f;
+  /* background-color: #2f6291; */
+  }
+  body{
+    font-size: 16px;
+    font-family: 'Prompt';
+    line-height: 26px
+  }
+  a{
+    text-decoration: none;
+}
+ul{
+  list-style: none !important;
+}
+.spacer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.color_sec{
+  color: var(--colorpink);
+}
+.color_dark{
+  color: var(--colordark);
+}
+/* header section start */
+.btn_sec{
+  background-color: var(--colorpink)
+}
+.btn_sec:hover{
+  /* color: #C78665 !important; */
+  background-color:var(--colordark) !important;
+}
+/* header section end */
+
+
+/* silder section start */
+.owl-dots{
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  
+  font-size: 30px !important;
+    background-color: transparent !important;
+    border: 2px solid #c7c7c7;
+    width: 15px !important;
+    height: 15px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  /* background-color: #DC3545 !important; */
+  border: 2px solid var(--colorpink) !important;
+}
+/* silder section end */
+
+/* login form section start */
+.login_sec{
+  box-shadow: 0px 0px 8px black;
+  width: 30%;
+  border-radius: 20px !important;
+}
+.bg_login{
+  background-color: var(--colorpink);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.login_btn{
+  background-color: var(--colorpink);
+}
+.login_btn:hover{
+  background-color: var(--colordark) !important;
+  /* color: #C78665 !important; */
+}
+.login_icon{
+  color: #C78665;
+}
+
+/* login form section end */
+
+/* about section start */
+.about_sec{
+  position: relative;
+}
+.text_sec::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: var(--colorpink);
+  top: 10px;
+  left: 160px;
+}
+.about_sec h2{
+  font-family: var(--fontEB) !important;
+  font-size: 53px;
+  font-family: 'light' !important;
+  color: var(--colordark);
+}
+/* about section end */
+
+/* Garllery  */
+.img_item3{
+  position: relative;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  display: block;
+}        
+ .text3{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: #1c87c9;
+  background: rgba(22, 43, 50, 0.5) !important;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 400ms ease-out;
+  transform: translateY(100%);  
+  transition-delay: 0s;
+  transition-duration: 0.4s; 
+} 
+.text3 p{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.img_item3:hover .text3 {
+  transform: translateY(0px);
+}
+
+/* breadcrumb section start */
+/* .bread_sec{
+  background: url('./img/breadcrumb-bg.png');
+  opacity: 0.8;
+}
+.breadcrumb li a{
+  color: var(--colordark);
+}
+.breadcrumb li{
+  color: var(--colordark);
+} */
+/* breadcrumb section end */
+
+/* footer section start */
+.foot_sec h3{
+  color: var(--colorpink);
+}
+.foot_sec ul li a{
+  color: black;
+}
+.foot_sec ul li a:hover{
+  color:var(--colorpink);
+}
+
+/* footer section end */
